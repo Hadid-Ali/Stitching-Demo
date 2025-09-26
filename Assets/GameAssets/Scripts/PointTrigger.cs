@@ -14,6 +14,7 @@ public class PointTrigger : MonoBehaviour
     {
         if (other.CompareTag("StitchPoint"))
         {
+            other.GetComponent<MeshRenderer>().enabled = false;
             //Debug.LogError("point " + other.gameObject.name);
             PointInfo info = other.GetComponent<PointInfo>();
             if (info)
@@ -31,7 +32,10 @@ public class PointTrigger : MonoBehaviour
                     ropeCursor.ChangeLength(changedLength);
                     GameEvents.RaycastDetectorEvents.onResetNeedle.RaiseEvent();
                 }
-             
+                if (info.startAnimation)
+                {
+                    info.ReduceThreadLength();
+                }
                 raycastDetector.GetPoints(other.gameObject);
 
             }

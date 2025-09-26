@@ -26746,11 +26746,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575824773}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.01, y: 2.04, z: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 2, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1911309610}
+  - {fileID: 1526506898}
+  - {fileID: 1614346695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &575824776
@@ -26805,6 +26808,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1266214785}
+  - {fileID: 1448409909}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738676427
@@ -26934,52 +26938,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738676427}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &784390564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784390566}
-  - component: {fileID: 784390565}
-  m_Layer: 0
-  m_Name: BurstCollisionWorld
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &784390565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784390564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a161c4294214a4fbcb7e9e94800494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cellSpans:
-    m_AlignBytes: 16
---- !u!4 &784390566
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784390564}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790585935
 GameObject:
   m_ObjectHideFlags: 0
@@ -33915,11 +33873,10 @@ Transform:
   m_GameObject: {fileID: 1138014460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: -1.01, y: -0.03999996, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1883619560}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1176644595
@@ -34384,6 +34341,11 @@ MonoBehaviour:
   <stopLine>k__BackingField: 0
   holes: []
   ropeSolver: {fileID: 1647407082}
+  startPoint: {fileID: 819725674}
+  endPoint: {fileID: 738676428}
+  minDistanceBetweenStartAndEndPoint: 1
+  _distance: 0
+  speed: 1.5
   needle: {fileID: 0}
   stiches: []
   points: []
@@ -34541,7 +34503,7 @@ Transform:
   m_GameObject: {fileID: 1296722301}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62099993, y: 3.416, z: -1}
+  m_LocalPosition: {x: -1.01, y: 3.416, z: -1}
   m_LocalScale: {x: 0.072848134, y: 0.072848134, z: 0.072848134}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -34669,7 +34631,14 @@ MonoBehaviour:
   effect: {fileID: 1205527313}
   startAnimation: 0
   startPointTransform: {fileID: 1548198985}
-  minReducedLength: -3.5
+  minReducedLength: {x: 0, y: 0, z: 0}
+  headPosTarget: {x: 0, y: 0, z: 0}
+  headRotTarget: {x: 0, y: 0, z: 0}
+  chnageClothPos: 0
+  pointMesh: {fileID: 0}
+  secondRopePos: {x: 0, y: 0, z: 0}
+  secondRope: {fileID: 0}
+  speed: 0.25
 --- !u!114 &1296722308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39663,6 +39632,53 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1448409908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448409909}
+  - component: {fileID: 1448409910}
+  m_Layer: 0
+  m_Name: ClothHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448409909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448409908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 597588403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448409910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448409908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7bdc1b20c3bdf46aa22a99532b551b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part1: {fileID: 575824775}
+  part2: {fileID: 1138014462}
+  speed: 0.5
 --- !u!1 &1526506897
 GameObject:
   m_ObjectHideFlags: 0
@@ -39695,13 +39711,13 @@ Transform:
   m_GameObject: {fileID: 1526506897}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.873, y: 3.6729999, z: -1}
+  m_LocalPosition: {x: -1.137, y: -0.70700026, z: 0}
   m_LocalScale: {x: 0.07284813, y: 0.07284813, z: 0.07284813}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 975247520}
   - {fileID: 1531274493}
-  m_Father: {fileID: 1647407084}
+  m_Father: {fileID: 575824775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1526506899
 SphereCollider:
@@ -39822,7 +39838,14 @@ MonoBehaviour:
   effect: {fileID: 1531274495}
   startAnimation: 0
   startPointTransform: {fileID: 0}
-  minReducedLength: 0
+  minReducedLength: {x: 0, y: 0, z: 0}
+  headPosTarget: {x: 0, y: 0, z: 0}
+  headRotTarget: {x: 0, y: 0, z: 0}
+  chnageClothPos: 0
+  pointMesh: {fileID: 0}
+  secondRopePos: {x: 0, y: 0, z: 0}
+  secondRope: {fileID: 0}
+  speed: 0.25
 --- !u!114 &1526506904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45619,13 +45642,13 @@ Transform:
   m_GameObject: {fileID: 1614346694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0890001, y: 3.7029998, z: -1}
+  m_LocalPosition: {x: -0.9209999, y: -0.6770003, z: 0}
   m_LocalScale: {x: 0.07284813, y: 0.07284813, z: 0.07284813}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1861025819}
   - {fileID: 1659421081}
-  m_Father: {fileID: 1647407084}
+  m_Father: {fileID: 575824775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1614346696
 SphereCollider:
@@ -45744,9 +45767,16 @@ MonoBehaviour:
   ropeCursor: {fileID: 790585941}
   rope: {fileID: 790585942}
   effect: {fileID: 1659421083}
-  startAnimation: 0
-  startPointTransform: {fileID: 0}
-  minReducedLength: 0
+  startAnimation: 1
+  startPointTransform: {fileID: 2112103200}
+  minReducedLength: {x: 0, y: 0, z: 0}
+  headPosTarget: {x: 1, y: 1.7, z: -1}
+  headRotTarget: {x: 0, y: 0, z: 0}
+  chnageClothPos: 1
+  pointMesh: {fileID: 1873039120}
+  secondRopePos: {x: 0, y: 0, z: 0}
+  secondRope: {fileID: 435316783}
+  speed: 0.25
 --- !u!114 &1614346701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46305,8 +46335,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647407082}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62099993, y: -2.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46314,9 +46344,6 @@ Transform:
   - {fileID: 1296722302}
   - {fileID: 1898201949}
   - {fileID: 1873039118}
-  - {fileID: 1911309610}
-  - {fileID: 1526506898}
-  - {fileID: 1614346695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658260763
@@ -57149,7 +57176,7 @@ Transform:
   m_GameObject: {fileID: 1873039117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0890001, y: 3.3979998, z: -1}
+  m_LocalPosition: {x: -0.5419998, y: 3.3979998, z: -1}
   m_LocalScale: {x: 0.07284813, y: 0.07284813, z: 0.07284813}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -57274,9 +57301,16 @@ MonoBehaviour:
   ropeCursor: {fileID: 274014787}
   rope: {fileID: 274014788}
   effect: {fileID: 1890265304}
-  startAnimation: 0
-  startPointTransform: {fileID: 0}
-  minReducedLength: 0
+  startAnimation: 1
+  startPointTransform: {fileID: 1658260764}
+  minReducedLength: {x: 0, y: 0, z: 0}
+  headPosTarget: {x: 1, y: 1.9, z: -1}
+  headRotTarget: {x: 0, y: 0, z: 0}
+  chnageClothPos: 1
+  pointMesh: {fileID: 1526506900}
+  secondRopePos: {x: -3.04, y: -0.17, z: 0}
+  secondRope: {fileID: 1754478732}
+  speed: 0.25
 --- !u!114 &1873039124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57308,114 +57342,6 @@ MonoBehaviour:
   filter: -65535
   m_SourceCollider: {fileID: 1911309611}
   m_DistanceField: {fileID: 0}
---- !u!1 &1883619559
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1883619560}
-  - component: {fileID: 1883619563}
-  - component: {fileID: 1883619562}
-  - component: {fileID: 1883619561}
-  m_Layer: 0
-  m_Name: er
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1883619560
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883619559}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.851, y: 1.049, z: -0.02}
-  m_LocalScale: {x: 0.59239, y: 0.16326961, z: 0.0022279285}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1138014462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1883619561
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883619559}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1883619562
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883619559}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: fe57172abbda1f648af26ce549a88681, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1883619563
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883619559}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1890265301
 GameObject:
   m_ObjectHideFlags: 0
@@ -62410,7 +62336,7 @@ Transform:
   m_GameObject: {fileID: 1898201948}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.873, y: 3.3979998, z: -1}
+  m_LocalPosition: {x: -0.7579999, y: 3.3979998, z: -1}
   m_LocalScale: {x: 0.07284813, y: 0.07284813, z: 0.07284813}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -62548,9 +62474,16 @@ MonoBehaviour:
   ropeCursor: {fileID: 1537904572}
   rope: {fileID: 1537904573}
   effect: {fileID: 1400419037}
-  startAnimation: 0
-  startPointTransform: {fileID: 0}
-  minReducedLength: 0
+  startAnimation: 1
+  startPointTransform: {fileID: 1548198985}
+  minReducedLength: {x: -0.02, y: 0.06, z: 0}
+  headPosTarget: {x: 1, y: 2, z: -1}
+  headRotTarget: {x: 0, y: 0, z: 7}
+  chnageClothPos: 1
+  pointMesh: {fileID: 1911309612}
+  secondRopePos: {x: -1.47, y: 0.64, z: 0}
+  secondRope: {fileID: 1067111933}
+  speed: 0.25
 --- !u!114 &1898201956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62723,13 +62656,13 @@ Transform:
   m_GameObject: {fileID: 1911309609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62099993, y: 3.6729999, z: -1}
+  m_LocalPosition: {x: -1.389, y: -0.70700026, z: 0}
   m_LocalScale: {x: 0.07284813, y: 0.07284813, z: 0.07284813}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 287458834}
   - {fileID: 948902528}
-  m_Father: {fileID: 1647407084}
+  m_Father: {fileID: 575824775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1911309611
 SphereCollider:
@@ -62863,7 +62796,14 @@ MonoBehaviour:
   effect: {fileID: 948902530}
   startAnimation: 0
   startPointTransform: {fileID: 1067111933}
-  minReducedLength: -1.5
+  minReducedLength: {x: 0, y: 0, z: 0}
+  headPosTarget: {x: 0, y: 0, z: 0}
+  headRotTarget: {x: 0, y: 0, z: 0}
+  chnageClothPos: 0
+  pointMesh: {fileID: 0}
+  secondRopePos: {x: 0, y: 0, z: 0}
+  secondRope: {fileID: 0}
+  speed: 0.25
 --- !u!114 &1911309617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67844,6 +67784,52 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &2046747515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2046747517}
+  - component: {fileID: 2046747516}
+  m_Layer: 0
+  m_Name: BurstCollisionWorld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2046747516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046747515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a161c4294214a4fbcb7e9e94800494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellSpans:
+    m_AlignBytes: 16
+--- !u!4 &2046747517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046747515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112103199
 GameObject:
   m_ObjectHideFlags: 0
@@ -68002,4 +67988,4 @@ SceneRoots:
   - {fileID: 575824775}
   - {fileID: 59323361}
   - {fileID: 21908274}
-  - {fileID: 784390566}
+  - {fileID: 2046747517}

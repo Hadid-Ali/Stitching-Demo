@@ -1,3 +1,4 @@
+using DG.Tweening;
 using NUnit.Framework;
 using Obi;
 using Unity.VisualScripting;
@@ -11,31 +12,39 @@ public class PointInfo : MonoBehaviour
     public ParticleSystem effect;
     public bool startAnimation;
     [SerializeField] Transform startPointTransform;
-    [SerializeField] float minReducedLength;
-    void ReduceThreadLength()
+    [SerializeField] Vector3 minReducedLength;
+    [SerializeField] Vector3 headPosTarget;
+    [SerializeField] Vector3 headRotTarget;
+    [SerializeField] bool chnageClothPos;
+    [SerializeField] MeshRenderer pointMesh;
+
+    [SerializeField] Vector3 secondRopePos;
+    [SerializeField] Transform secondRope;
+    [SerializeField] float speed;
+    public void ReduceThreadLength()
     {
         Vector3 pos = startPointTransform.localPosition;
-        if (minReducedLength > 0)
-        {
-            if(Mathf.Abs(pos.y) < Mathf.Abs(minReducedLength))
-                pos.y++;
-        }
-        else
-        {
-            if (Mathf.Abs( pos.y) < Mathf.Abs( minReducedLength))
-                pos.y--;
-        }
 
-        startPointTransform.localPosition = new Vector3(pos.x, pos.y, pos.z);
-
-    }
-    private void Update()
-    {
-        if (startAnimation)
+        startPointTransform.DOMove(minReducedLength, speed).SetEase(Ease.Linear).OnComplete(() =>
         {
-            ReduceThreadLength();
+
+        });
+        secondRope.DOMove(secondRopePos, speed).SetEase(Ease.Linear).OnComplete(() =>
+        {
+
+        });
+        //startPointTransform.localPosition = minReducedLength;
+        //secondRope.localPosition = secondRopePos;
+
+        if (chnageClothPos)
+        {
+            var clothHandler = ServiceLocator.GetService<IClothHandler>() as ClothHandler;
+            clothHandler?.MovePart1(headPosTarget,headRotTarget);
+
+            pointMesh.gameObject.SetActive(false);
         }
     }
+   
 }
     
 

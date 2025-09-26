@@ -1,33 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GithubProjects\\Stitching-Demo\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\gameassets\\scripts\\pointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\gameassets\\scripts\\pointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|e:\\githubprojects\\stitching-demo\\assets\\gameassets\\scripts\\raycastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|c:\\users\\dell\\desktop\\github_repo\\stitching-demo\\assets\\gameassets\\scripts\\raycastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\gameassets\\scripts\\raycastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\gameassets\\scripts\\pointinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\linerendererapproach\\clothhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\linerendererapproach\\clothhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\gameassets\\scripts\\pointinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\gameassets\\scripts\\pointinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\linerendererapproach\\needletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\linerendererapproach\\needletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\gameassets\\scripts\\pointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\gameassets\\scripts\\pointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\linerendererapproach\\sewingthreadspline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\linerendererapproach\\sewingthreadspline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\splinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\splinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|solutionrelative:assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\splinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|E:\\GithubProjects\\Stitching-Demo\\assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\paint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\linerendererapproach\\needletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\linerendererapproach\\needletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\gameassets\\scripts\\cloth\\iclothhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\gameassets\\scripts\\cloth\\iclothhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\linerendererapproach\\sewingthreadspline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83DACE1-0729-8E5A-85C1-CA81AD011443}|Assembly-CSharp.csproj|solutionrelative:assets\\linerendererapproach\\sewingthreadspline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\paint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}|Unity.Splines.Examples.csproj|solutionrelative:assets\\samples\\splines\\2.8.2\\spline examples (requires shader graph package)\\runtime\\paint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,67 +46,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NeedleTrigger.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\LinerendererApproach\\NeedleTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\NeedleTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\LinerendererApproach\\NeedleTrigger.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\LinerendererApproach\\NeedleTrigger.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\NeedleTrigger.cs",
               "RelativeToolTip": "Assets\\LinerendererApproach\\NeedleTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwA4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:07:03.669Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PointTrigger.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\GameAssets\\Scripts\\PointTrigger.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointTrigger.cs",
-              "RelativeToolTip": "Assets\\GameAssets\\Scripts\\PointTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IClothHandler.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\Cloth\\IClothHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\GameAssets\\Scripts\\Cloth\\IClothHandler.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\Cloth\\IClothHandler.cs",
+              "RelativeToolTip": "Assets\\GameAssets\\Scripts\\Cloth\\IClothHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:42:31.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:15:46.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClothHandler.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\ClothHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\LinerendererApproach\\ClothHandler.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\ClothHandler.cs",
+              "RelativeToolTip": "Assets\\LinerendererApproach\\ClothHandler.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T16:13:27.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PointTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\GameAssets\\Scripts\\PointTrigger.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointTrigger.cs",
+              "RelativeToolTip": "Assets\\GameAssets\\Scripts\\PointTrigger.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T10:42:31.163Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PointInfo.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointInfo.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointInfo.cs",
               "RelativeDocumentMoniker": "Assets\\GameAssets\\Scripts\\PointInfo.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointInfo.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\PointInfo.cs",
               "RelativeToolTip": "Assets\\GameAssets\\Scripts\\PointInfo.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T10:40:57.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T10:40:57.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "SplineRenderer.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
               "RelativeToolTip": "Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\SplineRenderer.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAqwDsAAAAPAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:41:40.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "SewingThreadSpline.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\LinerendererApproach\\SewingThreadSpline.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\SewingThreadSpline.cs",
               "RelativeDocumentMoniker": "Assets\\LinerendererApproach\\SewingThreadSpline.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\LinerendererApproach\\SewingThreadSpline.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\LinerendererApproach\\SewingThreadSpline.cs",
               "RelativeToolTip": "Assets\\LinerendererApproach\\SewingThreadSpline.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAQwC4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -106,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Paint.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
               "RelativeDocumentMoniker": "Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
               "RelativeToolTip": "Assets\\Samples\\Splines\\2.8.2\\Spline Examples (requires Shader Graph package)\\Runtime\\Paint.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAUwHkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -118,13 +147,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RaycastDetector.cs",
-              "DocumentMoniker": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
               "RelativeDocumentMoniker": "Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
-              "ToolTip": "E:\\GithubProjects\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\GitHub_Repo\\Stitching-Demo\\Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
               "RelativeToolTip": "Assets\\GameAssets\\Scripts\\RaycastDetector.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKgAAAAdAAAAAAAAAA==",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAHwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T19:16:57.853Z",
               "EditorCaption": ""

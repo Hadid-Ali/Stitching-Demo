@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using Unity.Splines.Examples;
@@ -24,6 +25,24 @@ public class RaycastDetector : MonoBehaviour, IRaycastDetector
 
     public List<GameObject> holes;
     [SerializeField] GameObject ropeSolver;
+
+    [SerializeField] Transform startPoint;
+    [SerializeField] Transform endPoint;
+
+    [SerializeField] float minDistanceBetweenStartAndEndPoint;
+    [SerializeField] float _distance;
+    [SerializeField] float speed;
+    void MoveEndPoint()
+    {
+        _distance = Vector3.Distance(startPoint.position, endPoint.position);
+        if (_distance < minDistanceBetweenStartAndEndPoint)
+        {
+            endPoint.DOMove(startPoint.position, speed).SetEase(Ease.Linear).OnComplete(() =>
+            {
+
+            });
+        }
+    }
     public void GetPoints(GameObject p)
     {
         if (!holes.Contains(p))
@@ -45,7 +64,7 @@ public class RaycastDetector : MonoBehaviour, IRaycastDetector
     void DisableRope()
     {
         ropeSolver.SetActive(false);
-        headAnim.enabled = true;
+        //headAnim.enabled = true;
 
         CancelInvoke(nameof(DisableRope));
     }
@@ -103,7 +122,7 @@ public class RaycastDetector : MonoBehaviour, IRaycastDetector
                     Vector3 pos = hit.point;
                     pos.z = -1;
                     needle.transform.position = pos;
-
+                    MoveEndPoint();
                     if (!isInTrigger)
                         GameEvents.SewingThreadSplineEvents.onAppSplineStitchPoints.RaiseEvent(pos);
                     else
