@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{97C02045-7E8D-9367-EC15-488B3220CB74}</ProjectGuid>
+    <ProjectGuid>{F83DACE1-0729-8E5A-85C1-CA81AD011443}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ColorFromPhase.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\VineClimbController.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameEvent\GameEvents.ThreadManagerEvents.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\Wrappable.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\CableCarController.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\SlowmoToggler.cs" />
@@ -74,9 +75,11 @@
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\AddRandomVelocity.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\HighlightCollidingRopes.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\CharacterControl2D.cs" />
+    <Compile Include="Assets\LinerendererApproach\NeedleTrigger.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ActorActorCollisionDetector.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ObjectDragger.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeNet.cs" />
+    <Compile Include="Assets\LinerendererApproach\SewingThreadSpline.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeBetweenTwoPoints.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ActorBlinker.cs" />
     <Compile Include="Assets\GameAssets\Scripts\RaycastDetector.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ObiParticleCounter.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeTensionColorizer.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\RigidbodyMaxAngularVel.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameEvent\GameEvents.RaycastDetectorEvents.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\TangledPegSlot.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\Blinker.cs" />
     <Compile Include="Assets\GameAssets\Scripts\LineInterface\ILineHandler.cs" />
@@ -111,11 +115,12 @@
     <Compile Include="Assets\GameAssets\Scripts\Services\IGameService.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\CharacterController\ObiCharacter.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\SnakeController.cs" />
+    <Compile Include="Assets\GameAssets\Scripts\GameEvent\GameEvent.SewingThreadSplineEvents.cs" />
+    <Compile Include="Assets\LinerendererApproach\SewingThread.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\TangledPeg.cs" />
     <Compile Include="Assets\GameAssets\Scripts\RopePuller.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ColorFromVelocity.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ActorCOMTransform.cs" />
-    <Compile Include="Assets\GameAssets\Scripts\GameEvent\GameEvents.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\TangledRopesGameController.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\CollisionEventHandler.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\GrapplingHook.cs" />
@@ -126,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Obi\Resources\Compute\PathFrame.cginc" />
+    <None Include="Assets\Samples\Splines\2.8.2\Spline Examples (requires Shader Graph package)\UXML\PaintUI.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Obi\Resources\Compute\BoxShapeQuery.compute" />
     <None Include="Assets\Obi\Resources\Compute\DensityConstraints.compute" />
@@ -144,6 +150,7 @@
     <None Include="Assets\Obi\Resources\Compute\MathUtils.cginc" />
     <None Include="Assets\Obi\Resources\Compute\BendConstraints.compute" />
     <None Include="Assets\Obi\Resources\Compute\PinholeConstraints.compute" />
+    <None Include="Assets\Samples\Splines\2.8.2\Spline Examples (requires Shader Graph package)\Shader\InterpolateSpline.compute" />
     <None Include="Assets\Obi\Resources\Compute\InstancedParticleRendering.compute" />
     <None Include="Assets\Obi\Resources\Compute\CollisionMaterial.cginc" />
     <None Include="Assets\Obi\Resources\Compute\DistanceFieldShape.compute" />
@@ -699,18 +706,6 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.10f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.10f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.Apple.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.10f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.Apple.Extensions.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1281,6 +1276,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1315,6 +1314,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
@@ -1373,6 +1376,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Settings.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Settings.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1428,12 +1435,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Obi.csproj">
-      <Project>{D7236A80-9206-054E-20F1-741A7AB69A87}</Project>
+      <Project>{ADB82EAC-8EBB-71FB-7C05-35CBF3200CB3}</Project>
       <Name>Obi</Name>
     </ProjectReference>
     <ProjectReference Include="Obi.Editor.csproj">
-      <Project>{347834EC-8D77-58B2-8C5A-ADD016C63867}</Project>
+      <Project>{D5AAA799-95E1-22B1-3B01-FC15E58FE0D2}</Project>
       <Name>Obi.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Splines.Examples.csproj">
+      <Project>{93584D9A-4CF6-9814-D3BA-70BBF6B500AF}</Project>
+      <Name>Unity.Splines.Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

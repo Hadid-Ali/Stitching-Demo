@@ -6,7 +6,7 @@ public class RaycastDetector : MonoBehaviour
     [SerializeField] float distance;
     [SerializeField]LayerMask layerMask;
     [SerializeField] bool locked = false;
-
+    [SerializeField] Vector3 needleStartPoint;
     private void OnEnable()
     {
         GameEvents.RaycastDetectorEvents.onResetNeedle.RegisterEvent(ResetNeedle);
@@ -20,6 +20,17 @@ public class RaycastDetector : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetMouseButtonUp(0))
+        {
+            //GameEvents.ThreadManagerEvents.onLineReset.RaiseEvent();
+            if (needle)
+            {
+                needle.transform.position = needleStartPoint;
+
+                GameEvents.SewingThreadSplineEvents.onResetSpline.RaiseEvent();
+                ResetNeedle();
+            }
+        }
         if (Input.GetMouseButton(0))
         {
             RaycastPoints(Input.mousePosition);
@@ -47,12 +58,10 @@ public class RaycastDetector : MonoBehaviour
                     Vector3 pos = hit.point;
                     pos.z = -1;
                     needle.transform.position = pos;
+                    GameEvents.SewingThreadSplineEvents.onAppSplineStitchPoints.RaiseEvent(pos);
+                    //GameEvents.ThreadManagerEvents.onDrawingThread.RaiseEvent(pos);
                 }
                 
-                if (hit.collider.CompareTag("StitchPoint"))
-                {
-                    Debug.LogError("Stitch point "+hit.collider.gameObject.name);
-                }
             }
         }
       
@@ -60,7 +69,7 @@ public class RaycastDetector : MonoBehaviour
 
     void ResetNeedle()
     {
-        needle.tag = "Untagged";
+        //needle.tag = "Untagged";
         needle = null;
         locked = false;
     }
