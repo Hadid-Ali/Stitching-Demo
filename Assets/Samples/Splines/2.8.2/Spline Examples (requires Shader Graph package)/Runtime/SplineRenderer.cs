@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Unity.Mathematics;
 using UnityEngine;
@@ -31,7 +32,8 @@ namespace Unity.Splines.Examples
         };
 
         [SerializeField]LineRenderer[] m_Lines;
-
+        [SerializeField]List<LineRenderer> strokes;
+        [SerializeField] Material strokeMat;
         void Awake()
         {
             m_SplineContainer = GetComponent<SplineContainer>();
@@ -55,8 +57,40 @@ namespace Unity.Splines.Examples
                 if (m_Splines[i] == spline)
                     m_Dirty = true;
         }
+        public bool drawSample = false;
+        void CreateLine(LineRenderer sampleLine)
+        {
+            GameObject line = new GameObject();
+            line.AddComponent<LineRenderer>();
+            line.transform.SetParent(this.transform);
+            LineRenderer l = line.GetComponent<LineRenderer>();
+
+            if (!strokes.Contains(l))
+            {
+                strokes.Add(l);
+                l.positionCount = m_Lines[0].positionCount;
+                l.numCornerVertices = 90;
+                l.numCapVertices = 90;
+                l.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                l.widthCurve = new AnimationCurve(new Keyframe(0f, m_LineRendererSettings.width));
+                l.startColor = m_LineRendererSettings.startColor;
+                l.endColor = m_LineRendererSettings.endColor;
+                l.material = strokeMat;
+                l.useWorldSpace = true;
+            }
+            for (int g = 0; g < sampleLine.positionCount; g++)
+            {
+                l.SetPosition(g, sampleLine.GetPosition(g));
+            }
+        }
         public void ResetLine()
         {
+            if (m_Lines.Length == 0) return;
+            if (!drawSample)
+            {
+                CreateLine(m_Lines[0]);
+                drawSample = true;
+            }
             for (int i = 0, c = m_Splines.Length; i < c; ++i)
             {
                 Destroy(m_Lines[i].gameObject);
@@ -79,6 +113,10 @@ namespace Unity.Splines.Examples
                     m_Lines[i] = new GameObject().AddComponent<LineRenderer>();
                     m_Lines[i].gameObject.name = $"SplineRenderer {i}";
                     m_Lines[i].transform.SetParent(transform, true);
+                    LineRenderer line = m_Lines[i].GetComponent<LineRenderer>();
+                    line.numCornerVertices = 90;
+                    line.numCapVertices = 90;
+                    line.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 }
 
                 m_Dirty = true;
@@ -113,6 +151,7 @@ namespace Unity.Splines.Examples
                 m_Lines[s].material = m_LineRendererSettings.material;
                 m_Lines[s].useWorldSpace = true;
                 m_Lines[s].SetPositions(m_Points);
+
             }
         }
     }

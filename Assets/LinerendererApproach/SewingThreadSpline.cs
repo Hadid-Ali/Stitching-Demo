@@ -11,7 +11,6 @@ public class SewingThreadSpline : MonoBehaviour
 {
     [SerializeField] SplineContainer splineContainer;
     private Spline spline;
-    [SerializeField] SplineExtrude extrude;
     [SerializeField] float splineWidth;
     [SerializeField] int resolution;
 
@@ -24,7 +23,7 @@ public class SewingThreadSpline : MonoBehaviour
 
     [SerializeField]
     Material m_SampleMat, m_ControlPointMat;
-    [SerializeField]SplineRenderer m_SplineRenderer;
+    [SerializeField] SplineRenderer m_SplineRenderer;
     void Awake()
     {
         spline = splineContainer.Spline;
@@ -45,26 +44,21 @@ public class SewingThreadSpline : MonoBehaviour
     void AddStitchPoint(Vector3 worldPos)
     {
         Vector3 localPos = splineContainer.transform.InverseTransformPoint(worldPos);
-
+        m_SplineRenderer.drawSample = false;
         if (spline.Count == 0 || Vector3.Distance(worldPos, lastPos) > minDistance)
         {
             localPos.z = -1;
             m_Stroke.Add(localPos);
             spline.Add(new BezierKnot(localPos));
 
+
             var all = new SplineRange(0, spline.Count);
             spline.SetTangentMode(all, TangentMode.AutoSmooth);
             spline.SetAutoSmoothTension(all, tension);
 
             lastPos = worldPos;
+
         }
-        //foreach (var sample in m_Stroke)
-        //    Graphics.DrawMesh(m_SampleDot, Matrix4x4.TRS(sample, Quaternion.identity, new Vector3(.2f, .2f, .2f)),
-        //        m_SampleMat, 0);
-        //foreach (var point in m_Reduced)
-        //    Graphics.DrawMesh(m_SampleDot,
-        //        Matrix4x4.TRS((Vector3)point + new Vector3(0f, 0f, -1f), Quaternion.identity,
-        //            new Vector3(.3f, .3f, .3f)), m_ControlPointMat, 0);
 
         RebuildSpline();
 
@@ -104,9 +98,8 @@ public class SewingThreadSpline : MonoBehaviour
     {
         // Before setting spline knots, reduce the number of sample points.
         SplineUtility.ReducePoints(m_Stroke, m_Reduced, m_PointReductionEpsilon);
-
         var spline = splineContainer.Spline;
-        Debug.LogError(" " + spline.Count);
+        //Debug.LogError(" " + spline.Count);
         // Assign the reduced sample positions to the Spline knots collection. Here we are constructing new
         // BezierKnots from a single position, disregarding tangent and rotation. The tangent and rotation will be
         // calculated automatically in the next step wherein the tangent mode is set to "Auto Smooth."
